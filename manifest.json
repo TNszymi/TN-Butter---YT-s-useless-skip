@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "TN Butter - YT's useless skip",
+  "version": "1.0",
+  "description": "Płynne przyspieszanie reklam i statystyki filmów. Powered by tnszymi.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": [
+    "https://returnyoutubedislikeapi.com/*"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tnbutter-useless-skip@tnszymi.local"
+    }
+  }
+}
